@@ -15,6 +15,8 @@ AI agents increasingly use external tools, plugins, and skills to interact with 
   - [Data Exfiltration & Privacy](#data-exfiltration--privacy)
   - [Indirect Prompt Injection](#indirect-prompt-injection)
   - [Cross-Plugin Attacks](#cross-plugin-attacks)
+  - [Backdoor Attacks on Agents](#backdoor-attacks-on-agents)
+  - [Agent Deception & Manipulation](#agent-deception--manipulation)
   - [Jailbreaking & Guardrail Bypass](#jailbreaking--guardrail-bypass)
 - [Defense Research](#defense-research)
   - [Permission & Access Control](#permission--access-control)
@@ -52,6 +54,8 @@ AI agents increasingly use external tools, plugins, and skills to interact with 
 - 📄 **[Prompt Injection Attacks and Defenses in LLM-Integrated Applications](https://arxiv.org/abs/2310.12815)** — Liu et al., 2024. Comprehensive taxonomy of injection attacks across direct and indirect vectors.
 - 📄 **[The Emerged Security and Privacy of LLM Agent: A Survey with Case Studies](https://arxiv.org/abs/2407.19354)** — Gan et al., 2024. Survey with practical case studies of security failures.
 - 📄 **[Self-Evolving Agents: A Survey](https://arxiv.org/abs/2504.01641)** — Gao et al., 2025. How self-evolving agents create emergent security risks.
+- 📄 **[From Thinker to Society: Security in Hierarchical Autonomy Evolution of AI Agents](https://arxiv.org/abs/2603.07496)** — Zhang et al., 2026. Hierarchical Autonomy Evolution (HAE) framework organizing agent security into cognitive, execution, and societal tiers.
+- 📄 **[Characterizing Faults in Agentic AI: A Taxonomy of Types, Symptoms, and Root Causes](https://arxiv.org/abs/2603.06847)** — Shah et al., 2026. Empirical taxonomy of reliability failures in agentic AI systems combining LLM reasoning with tool invocation.
 
 ## Attack Research
 
@@ -85,6 +89,7 @@ AI agents increasingly use external tools, plugins, and skills to interact with 
 - 📄 **[Silent Egress: LLM-Driven Data Exfiltration via Steganographic Channels](https://arxiv.org/abs/2502.XXXXX)** — Demonstrates covert channels for data theft through agent outputs.
 - 📄 **[Privacy Risks of General-Purpose AI Systems: A Foundation for Investigating Practitioner Perspectives](https://arxiv.org/abs/2407.02027)** — GPAIS privacy risks including agent data handling.
 - 📄 **[IMMACULATE: A Framework for Analyzing Information Exposure in Agent-Based Systems](https://arxiv.org/abs/2502.XXXXX)** — Multi-turn agent information leakage analysis.
+- 📄 **[AgentRaft: Automated Detection of Data Over-Exposure in LLM Agents](https://arxiv.org/abs/2603.07557)** — Lin et al., 2026. Automated detection framework for identifying data over-exposure vulnerabilities in LLM agent integrations.
 
 ### Indirect Prompt Injection
 
@@ -92,11 +97,19 @@ AI agents increasingly use external tools, plugins, and skills to interact with 
 - 📄 **[HouYi: A Black-box Prompt Injection Attack on LLM-integrated Applications](https://arxiv.org/abs/2306.05499)** — Liu et al., 2023. Systematic methodology for finding injection vulnerabilities.
 - 📄 **[DMAST: Dual-Modality Multi-Stage Adversarial Safety Training](https://arxiv.org/abs/2603.04364)** — Liu et al., 2026. Cross-modal DOM injection corrupting both visual and text channels.
 
+### Agent Deception & Manipulation
+
+- 📄 **[Intentional Deception as Controllable Capability in LLM Agents](https://arxiv.org/abs/2603.07848)** — Starace & Soule, 2026. Systematic study of engineered deception in multi-agent LLM interactions using 36 behavioral profiles for defensive design.
+
 ### Cross-Plugin Attacks
 
 - 📄 **[When LLM-based Code Generation Meets the Software Supply Chain](https://arxiv.org/abs/2405.XXXXX)** — Supply chain risks from LLM-generated code integrating malicious packages.
 - 📄 **[Shadow API: Covert Data Exfiltration via LLM-Mediated API Interactions](https://arxiv.org/abs/2603.01919)** — 2026. Stealth data theft through seemingly benign API calls.
 - 📄 **[AgentSkillOS: Towards Secure and Composable Agent Skill Operating Systems](https://arxiv.org/abs/2603.02176)** — 2026. OS-level isolation for agent skill execution.
+
+### Backdoor Attacks on Agents
+
+- 📄 **[SlowBA: An efficiency backdoor attack towards VLM-based GUI agents](https://arxiv.org/abs/2603.08316)** — Li et al., 2026. Novel backdoor targeting response latency of GUI agents via trigger-activated long reasoning chains.
 
 ### Jailbreaking & Guardrail Bypass
 
