@@ -56,6 +56,7 @@ AI agents increasingly use external tools, plugins, and skills to interact with 
 - 📄 **[Self-Evolving Agents: A Survey](https://arxiv.org/abs/2504.01641)** — Gao et al., 2025. How self-evolving agents create emergent security risks.
 - 📄 **[From Thinker to Society: Security in Hierarchical Autonomy Evolution of AI Agents](https://arxiv.org/abs/2603.07496)** — Zhang et al., 2026. Hierarchical Autonomy Evolution (HAE) framework organizing agent security into cognitive, execution, and societal tiers.
 - 📄 **[Characterizing Faults in Agentic AI: A Taxonomy of Types, Symptoms, and Root Causes](https://arxiv.org/abs/2603.06847)** — Shah et al., 2026. Empirical taxonomy of reliability failures in agentic AI systems combining LLM reasoning with tool invocation.
+- 📄 **[Security Considerations for Multi-agent Systems](https://arxiv.org/abs/2603.09002)** — 2026. Systematic threat landscape of MAS with 193 threat items across 9 categories; evaluates 16 frameworks finding none achieves majority coverage.
 
 ## Attack Research
 
@@ -69,6 +70,7 @@ AI agents increasingly use external tools, plugins, and skills to interact with 
 
 ### Tool Poisoning & Supply Chain
 
+- 📄 **[Skill-Inject: Measuring Agent Vulnerability to Skill File Attacks](https://arxiv.org/abs/2602.20156)** — Schmotz et al., 2026. Benchmark measuring agent vulnerability to malicious skill/config files; demonstrates data exfiltration, destructive actions, and ransomware-like behavior via AGENTS.md/CLAUDE.md injection.
 - 📄 **[ToolSword: Unveiling Safety Issues of LLMs in Tool Learning Across Three Stages](https://arxiv.org/abs/2402.10753)** — Ye et al., ACL 2024. Identifies safety issues across tool selection, tool calling, and result handling.
 - 📄 **[Compromising Agents via MCP](https://arxiv.org/abs/2504.03767)** — Invariant Labs, 2025. Tool poisoning attacks via Model Context Protocol servers.
 - 📄 **[Osmosis Distillation: Model Hijacking with the Fewest Samples](https://arxiv.org/abs/2603.04859)** — Shi et al., 2026. Supply-chain attack via poisoned synthetic training data.
@@ -99,6 +101,7 @@ AI agents increasingly use external tools, plugins, and skills to interact with 
 
 ### Agent Deception & Manipulation
 
+- 📄 **[Thought Virus: Viral Misalignment via Subliminal Prompting in Multi-Agent Systems](https://arxiv.org/abs/2603.00131)** — Weckbecker et al., 2026. Single subliminally prompted agent spreads persistent bias through entire multi-agent network, degrading truthfulness of other agents.
 - 📄 **[Intentional Deception as Controllable Capability in LLM Agents](https://arxiv.org/abs/2603.07848)** — Starace & Soule, 2026. Systematic study of engineered deception in multi-agent LLM interactions using 36 behavioral profiles for defensive design.
 
 ### Cross-Plugin Attacks
@@ -130,6 +133,7 @@ AI agents increasingly use external tools, plugins, and skills to interact with 
 
 ### Runtime Monitoring & Sandboxing
 
+- 📄 **[MCPShield: A Security Cognition Layer for Adaptive Trust Calibration in MCP Agents](https://arxiv.org/abs/2602.14281)** — Zhou et al., 2026. Plug-in security cognition layer for MCP agents that validates third-party tool invocations via experience-driven trust calibration.
 - 📄 **[AgentSentry: Real-time Monitoring for Agentic AI Systems](https://arxiv.org/abs/2502.XXXXX)** — Runtime behavioral monitoring of tool-using agents.
 - 📄 **[Monitoring Emergent Reward Hacking via Internal Activations](https://arxiv.org/abs/2603.04069)** — Sparse autoencoders detect reward-hacking during generation.
 - 📄 **[Self-Attribution Bias: When AI Monitors Go Easy on Themselves](https://arxiv.org/abs/2603.XXXXX)** — AI monitors exhibit systematic leniency on own outputs.
@@ -150,6 +154,8 @@ AI agents increasingly use external tools, plugins, and skills to interact with 
 ### Evaluation & Red Teaming
 
 - 📄 **[Agent Security Bench (ASB)](https://arxiv.org/abs/2410.02644)** — 10 scenarios, 10 agents, 398 environments. Comprehensive agent security benchmark.
+- 📄 **[AgentDyn: A Dynamic Open-Ended Benchmark for Prompt Injection Attacks](https://arxiv.org/abs/2602.03117)** — Li et al., 2026. Dynamic, open-ended benchmark for evaluating indirect prompt injection defenses in real-world agent security systems.
+- 📄 **[NAAMSE: Framework for Evolutionary Security Evaluation of Agents](https://arxiv.org/abs/2602.07391)** — Pai et al., ICLR 2026 Workshop. Evolutionary framework reframing agent security evaluation as feedback-driven optimization with autonomous red-teaming.
 - 📄 **[R-Judge: Benchmarking Safety Risk Awareness](https://arxiv.org/abs/2401.10019)** — 162 records, 27 risk scenarios for agent safety.
 - 📄 **[InjecAgent: Benchmarking Indirect Prompt Injections](https://arxiv.org/abs/2403.02691)** — 1,054 test cases for tool-integrated agents.
 - 📄 **[SIABENCH: Evaluating LLMs for Security Incident Analysis](https://arxiv.org/abs/2603.XXXXX)** — 11 LLMs × 160 security incident scenarios.
@@ -165,6 +171,9 @@ AI agents increasingly use external tools, plugins, and skills to interact with 
 | **[InjecAgent](https://github.com/uiuc-kang-lab/InjecAgent)** | Indirect prompt injection | 1,054 test cases | [Zhan et al.](https://arxiv.org/abs/2403.02691) |
 | **[R-Judge](https://github.com/Lordog/R-Judge)** | Safety risk awareness | 162 records, 27 scenarios | [Yuan et al.](https://arxiv.org/abs/2401.10019) |
 | **[ToolSword](https://github.com/Junjie-Ye/ToolSword)** | Tool learning safety | 6 scenarios, 3 stages | [Ye et al.](https://arxiv.org/abs/2402.10753) |
+| **[AgentDyn](https://arxiv.org/abs/2602.03117)** | Dynamic prompt injection | Open-ended, extensible | [Li et al.](https://arxiv.org/abs/2602.03117) |
+| **[Skill-Inject](https://www.skill-inject.com/)** | Skill file attacks | Multi-scenario | [Schmotz et al.](https://arxiv.org/abs/2602.20156) |
+| **[NAAMSE](https://arxiv.org/abs/2602.07391)** | Evolutionary agent security eval | Adaptive red-teaming | [Pai et al.](https://arxiv.org/abs/2602.07391) |
 | **[AgentHarm](https://arxiv.org/abs/2410.09024)** | Agent misuse | 110 behaviors, 440 variants | [Andriushchenko et al.](https://arxiv.org/abs/2410.09024) |
 | **[SkillGuard Dataset](https://github.com/LLMSecurity/skillguard)** | Malicious skill detection | 157 malicious skills | [Liu et al.](https://github.com/LLMSecurity/skillguard) |
 | **[WIPI](https://arxiv.org/abs/2402.16965)** | Web-based indirect injection | Multi-scenario | [Liu et al.](https://arxiv.org/abs/2402.16965) |
