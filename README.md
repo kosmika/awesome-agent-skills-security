@@ -88,6 +88,7 @@ AI agents increasingly use external tools, plugins, and skills to interact with 
 - 📄 **[Pandora's White-Box: Precise Training Data Detection and Extraction in Large Language Models](https://arxiv.org/abs/2402.17012)** — Relevant to agents leaking training data through tool outputs.
 - 📄 **[R-Judge: Benchmarking Safety Risk Awareness for LLM Agents](https://arxiv.org/abs/2401.10019)** — Yuan et al., ACL 2024. 162 records across 27 risk scenarios for evaluating agent safety awareness.
 - 📄 **[TrustAgent: Towards Safe and Trustworthy LLM-based Agents](https://arxiv.org/abs/2402.01586)** — Zhang et al., 2024. Agent-constitution-based approach to limiting excessive agency.
+- 📄 **[Post-Training Local LLM Agents for Linux Privilege Escalation with Verifiable Rewards](https://arxiv.org/abs/2603.17673)** — Normann et al., 2026. Two-stage post-training pipeline (SFT + RL with verifiable rewards) producing a 4B model that achieves 95.8% success on privilege escalation, nearly matching Claude Opus 4.6 at 100× lower inference cost.
 
 ### Data Exfiltration & Privacy
 
@@ -97,6 +98,7 @@ AI agents increasingly use external tools, plugins, and skills to interact with 
 - 📄 **[IMMACULATE: A Framework for Analyzing Information Exposure in Agent-Based Systems](https://arxiv.org/abs/2502.XXXXX)** — Multi-turn agent information leakage analysis.
 - 📄 **[AgentRaft: Automated Detection of Data Over-Exposure in LLM Agents](https://arxiv.org/abs/2603.07557)** — Lin et al., 2026. Automated detection framework for identifying data over-exposure vulnerabilities in LLM agent integrations.
 - 📄 **[You Told Me to Do It: Measuring Instructional Text-induced Private Data Leakage in LLM Agents](https://arxiv.org/abs/2603.11862)** — Kao et al., 2026. Identifies the Trusted Executor Dilemma where high-privilege agents execute adversarial README instructions at up to 85% success rate; 0% human detection rate across 15 participants.
+- 📄 **[Differential Privacy in Generative AI Agents: Analysis and Optimal Tradeoffs](https://arxiv.org/abs/2603.17902)** — Yang & Zhu, 2026. Probabilistic framework for analyzing privacy leakage in AI agents via differential privacy, deriving token-level and message-level bounds relating leakage to temperature and message length.
 
 ### Indirect Prompt Injection
 
@@ -131,6 +133,7 @@ AI agents increasingly use external tools, plugins, and skills to interact with 
 - 📄 **[PentestGPT: An LLM-empowered Automatic Penetration Testing Tool](https://arxiv.org/abs/2308.06782)** — Deng et al., 2023. Demonstrates agent-level tool use for offensive security. 11K+ GitHub stars.
 - 📄 **[Self-Fulfilling Misalignment in AI Control](https://arxiv.org/abs/2603.XXXXX)** — 2026. Fine-tuning on AI Control literature increases misalignment.
 - 📄 **[Reasoning Models Struggle to Control Their Chains of Thought](https://arxiv.org/abs/2603.XXXXX)** — 2026. CoT controllability decreases with RL training, implications for agent oversight.
+- 📄 **[CRAFT: Contrastive Reasoning Alignment — Reinforcement Learning from Hidden Representations](https://arxiv.org/abs/2603.17305)** — Luo et al., 2026. Red-teaming alignment framework combining contrastive representation learning with RL to separate safe/unsafe reasoning trajectories; 79% improvement in reasoning safety and 87.7% in final-response safety over base models.
 
 ## Defense Research
 
@@ -140,6 +143,7 @@ AI agents increasingly use external tools, plugins, and skills to interact with 
 - 📄 **[A Dual-Helix Governance Approach for Reliable Agentic AI](https://arxiv.org/abs/2603.04390)** — 3-track architecture (Knowledge, Behavior, Skills) using knowledge graphs.
 - 📄 **[Talk Freely, Execute Strictly: Schema-Gated Agentic AI](https://arxiv.org/abs/2603.XXXXX)** — Schema-gated orchestration for trustworthy agent deployment in regulated domains.
 - 📄 **[ESAA-Security: Event-Sourced Architecture for Agent-Assisted Security Audits](https://arxiv.org/abs/2603.XXXXX)** — 26 tasks, 95 checks, append-only event logs for reproducible AI code audits.
+- 📄 **[Caging the Agents: A Zero Trust Security Architecture for Autonomous AI in Healthcare](https://arxiv.org/abs/2603.17419)** — Maiti, 2026. Production-deployed zero-trust architecture for 9 autonomous AI agents: gVisor kernel isolation, credential proxy sidecars, network egress allowlisting, and prompt integrity framework with untrusted content labeling. Open-source configs released.
 
 ### Runtime Monitoring & Sandboxing
 
@@ -151,6 +155,7 @@ AI agents increasingly use external tools, plugins, and skills to interact with 
 - 📄 **[Monitoring Emergent Reward Hacking via Internal Activations](https://arxiv.org/abs/2603.04069)** — Sparse autoencoders detect reward-hacking during generation.
 - 📄 **[Self-Attribution Bias: When AI Monitors Go Easy on Themselves](https://arxiv.org/abs/2603.XXXXX)** — AI monitors exhibit systematic leniency on own outputs.
 - 📄 **[Salient Directions in AI Control](https://arxiv.org/abs/2603.XXXXX)** — Structure of AI Control evaluations: trusted monitors overseeing untrusted agents.
+- 📄 **[Governed Memory: A Production Architecture for Multi-Agent Workflows](https://arxiv.org/abs/2603.17787)** — Taheri, 2026. Shared memory governance layer with dual memory model, tiered governance routing, entity-scoped isolation (zero cross-entity leakage across 500 adversarial queries), and 100% adversarial governance compliance in production.
 
 ### Input/Output Validation
 
@@ -176,6 +181,8 @@ AI agents increasingly use external tools, plugins, and skills to interact with 
 - 📄 **[EVMbench: Evaluating AI Agents on Smart Contract Security](https://arxiv.org/abs/2603.04915)** — 117 vulnerabilities, frontier agents exploit end-to-end.
 - 📄 **[τ-Knowledge: Evaluating Conversational Agents over Unstructured Knowledge](https://arxiv.org/abs/2603.04370)** — Even frontier models achieve only ~25.5% on complex agent tasks.
 - 📄 **[Interactive Benchmarks](https://arxiv.org/abs/2603.04737)** — Evaluating via interactive proofs and games instead of static benchmarks.
+- 📄 **[VeriGrey: Greybox Agent Validation](https://arxiv.org/abs/2603.17639)** — Zhang et al., 2026. Greybox security testing using tool-invocation sequences as feedback and mutational prompt fuzzing; 33% more effective than black-box on AgentDojo, discovers prompt injection scenarios missed by black-box in Gemini CLI and OpenClaw.
+- 📄 **[LAAF: Logic-layer Automated Attack Framework for Agentic LLM Systems](https://arxiv.org/abs/2603.17239)** — Atta et al., 2026. First automated red-teaming framework combining 49-technique LPCI taxonomy with stage-sequential seed escalation; 84% mean aggregate breakthrough rate across five production LLM platforms.
 
 ## Benchmarks & Datasets
 
