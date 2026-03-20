@@ -139,6 +139,7 @@ AI agents increasingly use external tools, plugins, and skills to interact with 
 
 ### Permission & Access Control
 
+- 📄 **[PAuth: Precise Task-Scoped Authorization For Agents](https://arxiv.org/abs/2603.17170)** — Sharma et al., 2026. Implicit authorization model where NL task submission authorizes only required operations; uses NL slices and envelopes for provenance-based server-side verification, blocking injected operations in AgentDojo with zero false positives.
 - 📄 **[TrustAgent: Towards Safe and Trustworthy LLM-based Agents](https://arxiv.org/abs/2402.01586)** — Agent Constitution for safety-aware planning with pre/post-action inspection.
 - 📄 **[A Dual-Helix Governance Approach for Reliable Agentic AI](https://arxiv.org/abs/2603.04390)** — 3-track architecture (Knowledge, Behavior, Skills) using knowledge graphs.
 - 📄 **[Talk Freely, Execute Strictly: Schema-Gated Agentic AI](https://arxiv.org/abs/2603.XXXXX)** — Schema-gated orchestration for trustworthy agent deployment in regulated domains.
