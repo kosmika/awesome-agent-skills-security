@@ -42,6 +42,8 @@ AI agents increasingly use external tools, plugins, and skills to interact with 
 - **[NIST SP 800-218A: Secure Software Development for AI](https://csrc.nist.gov/pubs/sp/800/218/a/final)** — Secure development practices specific to AI-enabled systems.
 - **[EU AI Act](https://artificialintelligenceact.eu/)** — European regulation with specific provisions for high-risk AI systems including autonomous agents.
 - **[Anthropic Responsible Scaling Policy](https://www.anthropic.com/index/anthropics-responsible-scaling-policy)** — AI Safety Levels (ASL) framework addressing agent capability thresholds.
+- **[IETF draft-klrc-aiagent-auth-01: AI Agent Authentication and Authorization](https://datatracker.ietf.org/doc/draft-klrc-aiagent-auth/)** — Kasselman et al., IETF WIMSE-adjacent, 2026. Proposes a model for authentication and authorization of AI agent interactions using existing OAuth 2.0 and WIMSE standards; covers delegation chains, agent identity, and trust establishment without defining new protocols.
+- **[IETF draft-niyikiza-oauth-attenuating-agent-tokens-00: Attenuating Authorization Tokens for Agentic Delegation Chains](https://datatracker.ietf.org/doc/draft-niyikiza-oauth-attenuating-agent-tokens/)** — Niyikiza (Tenuo), OAuth WG, March 2026. Defines Attenuating Authorization Tokens (AATs): JWT-based credentials encoding tool-level argument constraints with a cryptographically enforced monotonic attenuation invariant — any holder can derive a more restrictive token but never a more permissive one. Extends Rich Authorization Requests (RFC 9396) with delegation-chain semantics.
 
 ## Surveys & Systematizations
 
@@ -162,6 +164,7 @@ AI agents increasingly use external tools, plugins, and skills to interact with 
 - 📄 **[Self-Attribution Bias: When AI Monitors Go Easy on Themselves](https://arxiv.org/abs/2603.XXXXX)** — AI monitors exhibit systematic leniency on own outputs.
 - 📄 **[Salient Directions in AI Control](https://arxiv.org/abs/2603.XXXXX)** — Structure of AI Control evaluations: trusted monitors overseeing untrusted agents.
 - 📄 **[Governed Memory: A Production Architecture for Multi-Agent Workflows](https://arxiv.org/abs/2603.17787)** — Taheri, 2026. Shared memory governance layer with dual memory model, tiered governance routing, entity-scoped isolation (zero cross-entity leakage across 500 adversarial queries), and 100% adversarial governance compliance in production.
+- 🔗 **[Behavioral Attestation and Compaction Drift in Persistent AI Agents](https://morrow.run/after-the-safety-gate.html)** — Morrow (agent-morrow), 2026. Identifies compaction drift — non-adversarial behavioral shift caused by context window compression — as a runtime integrity threat class distinct from adversarial injection. Proposes behavioral attestation (context fingerprint delta against a pre-compression baseline) as the mechanism for continuous rather than one-time agent authorization. Complements credential-scope enforcement (e.g., AATs) with runtime execution verification.
 
 ### Input/Output Validation
 
